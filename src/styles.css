@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeInfadeOut;
+  animation-duration: 4s;
+}
+
+@keyframes fadeInfadeOut {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

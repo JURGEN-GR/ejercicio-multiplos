@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "multiplos-e469e": {
+      "hosting": {
+        "multiplos": [
+          "multiplos-e469e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "multiplos-e469e"
+  }
+}

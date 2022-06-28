@@ -1,0 +1,33 @@
+<div class="container mt-3">
+  <h1>Multiplos</h1>
+  <hr />
+  <!-- Caja de texto -->
+  <div class="d-flex">
+    <input
+      type="number"
+      class="form-control w-25"
+      #inputText
+      (keyup.enter)="calcular()"
+    />
+    <button class="btn btn-dark ms-3" (click)="calcular()">Calcular</button>
+  </div>
+
+  <!-- Lista de multiplos -->
+  <ul
+    class="list-group list-group-numbered mt-3 animate__animated animate__fadeIn"
+    *ngIf="numeroIngresado > 0"
+  >
+    <li *ngIf="multiplos.de3?.length" class="fw-bold text-success">
+      Multiplos de 3: {{ multiplos.de3?.join(", ") }}
+    </li>
+    <li *ngIf="multiplos.de5?.length" class="fw-bold text-danger">
+      Multiplos de 5: {{ multiplos.de5?.join(", ") }}
+    </li>
+    <li *ngIf="multiplos.de7?.length" class="fw-bold text-primary">
+      Multiplos de 7: {{ multiplos.de7?.join(", ") }}
+    </li>
+  </ul>
+
+  <!-- Alerta -->
+  <div #contenedorAlertas></div>
+</div>
